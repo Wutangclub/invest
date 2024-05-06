@@ -1,11 +1,1255 @@
-<%- include('partials/header') -%>
 
-<main class="container">
-    <div class="row justify-content-around mt-5">
-        <a href="/login" class="col-3 btn btn-primary"> Login</a>
-        <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- BUTTON BAR -->
+    <div class="angle">
+        <a href="#"><i class="fa-solid fa-mars-stroke-up"></i></a>
     </div>
-</main>
-    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="images">
+                    <a href="/"><img src="imgs/white-logo.png" alt=""></a>
+                </div>
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars-staggered"></i></label >
+                <nav>
+                    <div class="nav">
+                        <ul id="breaker">
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#price">Pricing</a></li>
+                            <li><a href="#faq">Faq</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<%- include('partials/footer') -%>
+    <!-- Section-1 -->
+    <section class="section-1">
+        <div class="section">
+            <div class="secure">
+                <div class="secure-1">
+                    <div class="slide current">
+                        <div class="picture">
+                            <img src="/imgs/slide1.jpg" alt="" class="darklayer">
+                        </div>
+                        <div class="content ">
+                            <div class="income">Secure & easy way to <span> make passive income.</span></div>
+                            <p>We invest today's capital in tommorow's most compelling assets.</p>
+                            <div class="button">
+                                <div class="started">
+                                    <a href="/signup"><button>Get started</button></a>
+                                </div>
+                                <div class="login">
+                                    <a href="/login"><button>Log in</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="picture">
+                            <img src="/imgs/slide5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="income">Cryptocurrency trading is <span> Better with us.</span></div>
+                            <p>Allow us take you on a crypto journey worthwhile with a happy ending.</p>
+                            <div class="button">
+                                <div class="started ">
+                                    <a href="#price"><button class="others">See plans</button></a>
+                                </div>
+                                <div class="login ">
+                                    <a href="/signup"><button class="change">Get started</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="picture">
+                            <img src="/imgs/slide6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="income">Invest & build up your <span> portfolio.</span></div>
+                            <p>you are one steps away from changing your portfolio for the better.</p>
+                            <div class="button">
+                                <div class="started">
+                                    <a href="/signup"><button>invest now!</button></a>
+                                </div>
+                                <div class="login">
+                                    <a href="#price"><button>See plans</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <div onclick="side_slides(-1)" class="arrow-1 left">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div onclick="side_slide(1)" class="arrow-1 right">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="space">
+                    <button  onclick="btm_slide(1)"></button>
+                    <button  onclick="btm_slide(2)"></button>
+                    <button  onclick="btm_slide(3)"></button>
+                </div>
+            </div>
+            <div class="coins">
+                <div class="bitcoin">
+                    <div class="bitcoin-1">
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/bitcoin.svg" alt="">
+                                </div>
+                                <div class="euro small">bitcoin</div>
+                            </a>
+                        </div>
+                        
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/decentral.svg" alt="">
+                                </div>
+                                <div class="euro">Manausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/etherium.svg" alt="">
+                                </div>
+                                <div class="euro small">ethereum</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/luna.svg" alt="">
+                                </div>
+                                <div class="euro">lunausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/matic.svg" alt="">
+                                </div>
+                                <div class="euro">Maticusdt</div>
+                            </a>
+                            
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/sol.svg" alt="">
+                                </div>
+                                <div class="euro">Solusdt</div>
+                            </a>
+                        </div>
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/bitcoin.svg" alt="">
+                                </div>
+                                <div class="euro small">bitcoin</div>
+                            </a>
+                        </div>
+                        
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/decentral.svg" alt="">
+                                </div>
+                                <div class="euro">Manausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/etherium.svg" alt="">
+                                </div>
+                                <div class="euro small">ethereum</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/luna.svg" alt="">
+                                </div>
+                                <div class="euro">lunausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/matic.svg" alt="">
+                                </div>
+                                <div class="euro">Maticusdt</div>
+                            </a>
+                            
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/sol.svg" alt="">
+                                </div>
+                                <div class="euro">Solusdt</div>
+                            </a>
+                        </div>
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/bitcoin.svg" alt="">
+                                </div>
+                                <div class="euro small">bitcoin</div>
+                            </a>
+                        </div>
+                        
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/decentral.svg" alt="">
+                                </div>
+                                <div class="euro">Manausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/etherium.svg" alt="">
+                                </div>
+                                <div class="euro small">ethereum</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/luna.svg" alt="">
+                                </div>
+                                <div class="euro">lunausdt</div>
+                            </a>
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/matic.svg" alt="">
+                                </div>
+                                <div class="euro">Maticusdt</div>
+                            </a>
+                            
+                        </div>
+                    
+                        <div class="bitcoins-1">
+                            <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
+                                <div class="diagram">
+                                    <img src="imgs/sol.svg" alt="">
+                                </div>
+                                <div class="euro">Solusdt</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-2 -->
+    <section class="section-2">
+        <div class="section">
+            <div class="what">
+                <i class="fas fa-bitcoin-sign"></i>
+                <div class="offer">
+                    <div class="what-1">What We Offer</div>
+                    <div class="crypto">CRYPTMGMT <span>FEATURES</span></div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="trading">
+                <div class="trading-1">
+                    <a href="login.html">
+                        <div class="details-1">
+                            <img src="imgs/bg1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                            <div class="copy-trade">Copy Trading</div>
+                            <p>Copy trading allows you to direct copy the positions taken by other expert traders. you simply copy everything</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trading-1">
+                    <a href="#price">
+                        <div class="details-1">
+                            <img src="imgs/bg3.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="copy-trade">Flexible Plans</div>
+                            <p>Flexible plans no matter your portfolio size. Reasonable trading fees for takers and all market makers</p>
+                        </div>
+                        
+                    </a>   
+                </div>
+                <div class="trading-1">
+                    <a href="login.html">
+                        <div class="details-1">
+                            <img src="imgs/bg4.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fas fa-money-bill-trend-up"></i>
+                            </div>
+                            <div class="copy-trade">Automatic Trades</div>
+                            <p>The right trades at their right positions, at the right time, guaranteed to bring profits</p>
+                        </div>
+                        
+                    </a>    
+                </div>
+                <div class="trading-1">
+                    <a href="login.html">
+                        <div class="details-1">
+                            <img src="imgs/bg5.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="copy-trade">Account security</div>
+                            <p>We use one of the most secure, and trusted DDoS Protection and mitigation provider to ensure the safety of your account and portfolio</p>
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="trading-1">
+                    <a href="login.html">
+                        <div class="details-1">
+                            <img src="imgs/bg6.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fa-solid fa-bitcoin-sign"></i>
+                            </div>
+                            <div class="copy-trade">Cryptocurrency Trading</div>
+                            <p>We help you trade various cryptocurrencies and bring reasonable returns to your portfolio without you having to do any work yourself</p>
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="trading-1">
+                    <a href="login.html">
+                        <div class="details-1">
+                            <img src="imgs/bg1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="icons">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </div>
+                            <div class="copy-trade">Friendly interface</div>
+                            <p>Whether you are a beginner or a professional in cryptocurrency trading, we are sure that you will find our platform easy to use.</p>
+                        </div>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-3 -->
+    <section class="section-3">
+        <div class="section">
+            <div class="frequent" id="faq">
+                <div class="frequent-1">
+                    <div class="freq">
+                        <div class="frequent-i">FREQUENT <span>QUESTIONS</span> </div>
+                        <div class="lines"></div>
+                    </div>
+                    <div class="question">
+                        <div class="straight-1" id="showcase">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl fire" id="showing"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">Who Are The Trading Experts?</div>
+                                <p class="fire" id="remove">We carefully select expert traders. We get to know them as a trader and examine their trading performance over a period of time. We also tend to look for expert who already have a following to further confirm their competence (social proof). You can also read about every expert on their individual performance pages.</p>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase1">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show1"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing1"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">What Is The Recommended Amount To Begin With?</div>
+                                <p id="remove1">We suggest to have at least about $3000-$5000 in your account in BTC value due to exchanges minimum order requirements and so that you can at least cover the subscription cost every month.</p>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase2">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show2"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing2"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">How Does Copy Trading Work?</div>
+                                <p id="remove2">Here is how the copier works: You, as an investor, simply select an expert or experts that you want to copy trades from. Once you are signed up, this is the only action needed on your part.
+                                    Once you've taken care of the above, you are all set. There are no codes that you need to run or signals for you to manually input. Our software will handle the trade copying automatically on your behalf. We monitor your experts trading activity and as soon as there is a trade, we calculate all the necessary parameters and execute the trade.
+                                    The only thing you have to make sure of is that you have enough available base currency that your expert trades with, in your trading account. How much is enough? First, you must meet the exchanges minimum order amount (let's say about $10 per trade to be safe). That means that if your expert executes a 5% order, you must have at least $300 in your account total value (at 100% expert allocation as an example). This also means that you need to have at least 10% or higher in available base currency to avoid missed trades.
+                                    When the expert exits a position, you too will exit it. Automatically. You can also change allocation at any time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase3">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show3"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing3"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">What About The Investment Plans? </div>
+                                <p id="remove3">There are various investment plans, depending on the amount you are willing to invest.</p>
+                                <ul >
+                                    <li id="maker">Basic Plan - $1000-$3000</li>
+                                    <li id="maker1">Silver Plan - $3500-$6000</li>
+                                    <li id="maker2">Gold Plan - $6500-$10000</li>
+                                    <li id="maker3">Platinum Plan - $15000-$25000</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase4">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show4"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing4"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">Who Are The Trading Experts?</div>
+                                <p id="remove4">We carefully select expert traders. We get to know them as a trader and examine their trading performance over a period of time. We also tend to look for expert who already have a following to further confirm their competence (social proof). You can also read about every expert on their individual performance pages.</p>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase5">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show5"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing5"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">What Are The Trading Fees?</div>
+                                <p id="remove5">We do not charge you any setup or maintenance fees, each trader gets a set percentage of the profit they make, make sure you check this percentage before copying any trader.</p>
+                            </div>
+                        </div>
+                        <div class="straight-1" id="showcase6">
+                            <div class="big-circle">
+                                <i class="fa-solid fa-circle" id="show6"></i>
+                            </div>
+                            <div class="big-circle1">
+                                <i class="fa-solid fa-record-vinyl" id="showing6"></i>
+                            </div>
+                            <div class="details">
+                                <div class="details-1">How can i contact CryptoFXMgmt</div>
+                                <p id="remove6">Contact us through the live chat feature on the website or send an email to <a href="mailto:cryptofxmgmt.gmail.com">cryptofxmgmt.gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frequent-2"  id="about">
+                    <div class="about">
+                        <div class="about-1">ABOUT <span>US</span> </div>
+                        <div class="lines"></div>
+                    </div>
+                    <div class="about-1">
+                        <div class="background">
+                            <div class="background-1"></div>
+                            <div class="images">
+                                <img src="imgs/promobg1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promotion">
+                                <div class="who">Who Are We?</div>
+                                <p>We are CryptoFXMgmt. We are committed to enriching society by delivering superior investment services. We are not afraid to continually challenge conventional wisdom and actively encourage change in order to pursue growth. We are committed to putting our clients at the heart of our business, developing and maintaining long-standing relationships based on trust. We are one firm, committed to delivering the full range of our capabilities, knowledge and resources to meet the needs of our clients. We respect diversity and value differences of opinion.</p>
+                            </div>
+                            <div class="seperate">
+                                <a href="index.html">
+                                    <div class="btns">
+                                        <div class="btns-1">Read More</div>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </a>
+                                <div class="signature">
+                                    <img src="imgs/signature.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-4 -->
+    <section class="section-4">
+        <div class="section">
+            <div class="btcs">
+                <i class="fas fa-bitcoin-sign"></i>
+                <div class="pricing">
+                    <div class="pricing-1">Why CryptoFXMgmt</div>
+                    <div class="pricing-2">WHY CHOOSE <span>CRYPTOFXMGMT</span> </div>
+                </div>
+                <div class="dash"></div>
+            </div>
+            <div class="easy">
+                <div class="easy-1">
+                    <div class="shape">
+                        <div class="shaping">
+                            <div class="shape-1">
+                                <div class="hexagon"></div>
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                            <div class="invest">
+                                <div class="invest-1">Easy Investments</div>
+                                <p>Investing is simple and very straight-forward. No hassels whatsoever.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="shape">
+                        <div class="shaping">
+                            <div class="shape-1">
+                                <div class="hexagon blender"></div>
+                                <i class="fa-solid fa-file-invoice-dollar blending"></i>
+                            </div>
+                            <div class="invest">
+                                <div class="invest-1">Trading Strategy</div>
+                                <p>With the help of our available expert traders, tested and reliable trading strategies are executed on your behalf to maximise profits.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="shape">
+                        <div class="shaping">
+                            <div class="shape-1">
+                                <div class="hexagon blenders"></div>
+                                <i class="fa-solid fa-sack-dollar blend"></i>
+                            </div>
+                            <div class="invest">
+                                <div class="invest-1">Guaranteed Returns</div>
+                                <p>Returns on your investments are 100% guaranteed after you select a suitable investment plan.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="shape">
+                        <div class="shaping">
+                            <div class="shape-1">
+                                <div class="hexagon"></div>
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                            <div class="invest">
+                                <div class="invest-1">Fast Withdrawal</div>
+                                <p>Withdrawal of funds are processed immediately and paid directly to you.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="easy-2">
+                    <div class="ready">We are ready to <span>work with you.</span> </div>
+                    <p>Choose a plan that suits you.</p>
+                    <div class="view">
+                        <a href="#price"><button>view plans</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section-5">
+        <div class="section">
+            <div class="counting">
+                <div class="counting-1">
+                    <img src="imgs/slide6.jpg" alt="">
+                </div>
+                <div class="value">
+                    <div class="value-1">
+                        <div class="value-2 disperse">
+                            <div class="counter" id="hund" data-goal="20000" >0</div>
+                            <i class="fas fa-plus"></i>
+                            <div class="process">PROCESSED TRANSACTIONS</div>
+                        </div>
+                        <div class="value-2">
+                            <div class="counter" id="hunds"  data-goal="30">0</div>
+                            <i class="fas fa-plus"></i>
+                            <div class="process">EXPERT TRADERS</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <img src="imgs/plus.png" alt="">
+                    <div class="value-i">
+                        <div class="value-2 disperses">
+                            <div class="counter" id="hundre"  data-goal="350">0</div>
+                            <i class="fas fa-plus"></i>
+                            <div class="process">CLIENTS</div>
+                        </div>
+                        <div class="value-2 dispae">
+                            <div class="counter"  id="hundred"  data-goal="1">0</div>
+                            <div class="process">COMPANY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="begin">
+                <div class="hole">
+                    <i class="fas fa-bitcoin-sign"></i>
+                    <div class="hole-1">
+                        <div class="begin-1">How To Begin</div>
+                        <div class="begin-2">HOW <span>CRYPTOFXMGMT</span> WORKS</div>
+                    </div>
+                    <div class="straight"></div>
+                </div>
+                <div class="create">
+                    <div class="box">
+                        <i class="fa-solid fa-futbol"></i>
+                        <div class="account">Create an account</div>
+                        <p>Begin by creating an account <span>here</span>  or signing into your already existing account  <span>here</span>.</p>
+                    </div>
+                    <div class="box1">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <div class="account">Choose an investment plan</div>
+                        <p>Select an investment plan of your choice. Our plans start from as low as $999.99!</p>
+                    </div>
+                    <div class="box2">
+                        <i class="fa-solid fa-handshake"></i>
+                        <div class="account">Allow us to do the rest</div>
+                        <p>With the help of our team of expert traders, we shall do all the hardwork for you while you get returns on your investments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="white-back">
+                <div class="basic" id="price">
+                    <div class="basic-1">
+                        <i class="fas fa-bitcoin-sign"></i>
+                        <div class="basic-ii">
+                            <div class="easy">CryptoFXMgmt packages</div>
+                            <div class="easy-1">OUR <span> PRICING</span> </div>
+                        </div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="price">
+                        <div class="price-1">
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla">$</span>1,000 <span class="dash">-</span> <span class="dolla1">$</span>15,000<span>/mo</span></div>
+                                    <div class="letter-1">Basic</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 5% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 5% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="/login">Get Basic plan now</a>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla one">$</span>16,000  <span class="dash">-</span> <span class="dolla1 one">$</span>50,000<span>/mo</span></div>
+                                    <div class="letter-1">Silver</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 5% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="login.html">Get Silver plan now</a>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla two">$</span>51,000  <span class="dash">-</span>  <span class="dolla1">$</span>100,000<span>/mo</span></div>
+                                    <div class="letter-1">Gold</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 5% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 15% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="login.html">Get Gold plan now</a>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla three">$</span>101,000  <span class="dash">-</span>  <span class="dolla1">$</span>200,000<span>/mo</span></div>
+                                    <div class="letter-1">Platinum</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 5% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 20% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="login.html">Get Platinum plan now</a>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla four">$</span>201,000  <span class="dash">-</span>  <span class="dolla1">$</span>500,000<span>/mo</span></div>
+                                    <div class="letter-1">Diamond</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul class="height">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 7% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal (with an option to withdraw after just 2 weeks)</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="login.html">Get Diamond plan now</a>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="boxx-1">
+                                    <div class="letter"> <span class="dolla five">$</span>501,000  <span class="dash">-</span>  <span class="dolla1 two">$</span>1,000,000<span>/mo</span></div>
+                                    <div class="letter-1">Sapphire</div>
+                                </div>
+                                <i class="fas fa-caret-down" id="blank"></i>
+                                <ul class="height">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 12% Daily Interests</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 40% Referral Bonus</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 10% Company Commission</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 30 Days Profit Withdrawal (with an option to withdraw after just 2 weeks)</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span> 2 Years Contract Period</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <span>  24/7 Support</span>
+                                    </li>
+                                </ul>
+                                <div class="plan">
+                                    <a href="login.html">Get Sapphire plan now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masters" id="members">
+                    <div class="masters-1">
+                        <i class="fas fa-bitcoin-sign"></i>
+                        <div class="mastersss">
+                            <div class="masters-2">Our Master</div>
+                            <div class="team">CRYPTOFXMGMT  <span>TEAM</span></div>
+                        </div>
+                        <div class="dash"></div>
+                    </div>
+                    <p>Our forward-looking leadership team is made up of dedicated, focused and experienced executives. Working with each other and with our employees worldwide, their knowledge and experience come together to make a difference for all our clients.</p>
+                    <div class="name">
+                        <ul>
+                            <li>Julian Borne</li>
+                            <li>John MCcallum</li>
+                            <li>Joshua sabitzer</li>
+                            <li>Mark kutcher</li>
+                            <li>hailey kristy</li>
+                            
+                        </ul>
+                        <ul class="fresh">
+                            <li id="jogo" >Julian Borne</li>
+                            <li id="jogo">John MCcallum</li>
+                            <li id="jogo">Joshua sabitzer</li>
+                            <li id="jogo">Mark kutcher</li>
+                            <li id="jogo">hailey kristy</li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="button-1">
+                        <button onclick="btm_slide(1)"></button>
+                        <button onclick="btm_slide(1)"></button>
+                        <button onclick="btm_slide(1)"></button>
+                        <button onclick="btm_slide(1)"></button>
+                        <button onclick="btm_slide(1)"></button>
+                    </div>
+                </div>
+                <div class="certified">
+                    <div class="certified-1">
+                        <i class="fas fa-bitcoin-sign"></i>
+                        <div class="cerrtif">
+                            <div class="certified-2">We Are Certified</div>
+                            <div class="name">CRYPTOFXMGMT <span>CERTIFICATION</span></div>
+                        </div>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="images">
+                        <img src="imgs/cert.jpg" alt="">
+                    </div>
+                </div>
+                <div class="clints">
+                    <div class="xlients-1" id="feedback">
+                        <i class="fas fa-bitcoin-sign"></i>
+                        <div class="clenns">
+                            <div class="same">What Our Clients Are Saying</div>
+                            <div class="smae-1">CLIENT <span>FEEDBACK</span> </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="space-1">
+                        <div class="joinerss">
+                            <div class="joined">
+                                <div class="joinedss">
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="composed">
+                                        <div class="composed-1">
+                                            <img src="imgs/person1.jpg" alt="">
+                                        </div>
+                                        <p>Very great service. I love everything about this platform and the passive income it generates for me.</p>
+                                        <div class="para">- Sally Abbey</div>
+                                    </div>
+                                </div>
+                                <div class="joinedss">
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="composed">
+                                        <div class="composed-1">
+                                            <img src="imgs/person2.jpg" alt="">
+                                        </div>
+                                        <p class="pinn">Easy to login, easy to use. Best user experience i have seen so far. Quick customer care response. i am really impressed</p>
+                                        <div class="para">- Christian Muller</div>
+                                    </div>
+                                </div>
+                                <div class="joinedss">
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="composed">
+                                        <div class="composed-1">
+                                            <img src="imgs/person3.jpeg" alt="">
+                                        </div>
+                                        <p class="pinn">I started not too long and i am pleasantly surprised by their flexibility, quick decisions and the level of customer support</p>
+                                        <div class="para">- Erica Sands</div>
+                                    </div>
+                                </div>
+                                <div class="joinedss">
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="composed">
+                                        <div class="composed-1">
+                                            <img src="imgs/person4.jpeg" alt="">
+                                        </div>
+                                        <p>Excellent broker with very good customer service and support. Very contented with their service.</p>
+                                        <div class="para">- Damian Greg</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <div class="left-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="right-arrow">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sizer">
+                    <div class="sizes">
+                        <div class="gallery">
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/1.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/2.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/3.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/4.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/5.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="gala">
+                                <a href="login.html">
+                                    <div class="gallery-1">
+                                        <img src="imgs/6.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ready">
+                    <div class="ready-1">
+                        <div class="invest">Ready To Invest?</div>
+                        <div class="goon">Go on, create an account. <span>You're one click away from generating passive income and expanding your portfolio.</span></div>
+                    </div>
+                    <div class="started">
+                        <a href="regiter.html"><button>Get Started</button></a>
+                    </div>
+                </div>
+                <div class="know">
+                    <div class="know-1">
+                        <div class="know-2">
+                            <div class="under">KNOW <span> CRYPTOFXMGMT</span></div>
+                            <div class="under-1"></div>
+                        </div>
+                        <div class="white">
+                            <div class="white-1">
+                                <img src="imgs/bg8.jpg" alt="">
+                            </div>
+                            <a href="https://www.tradingview.com/chart/USDJPY/uFzlbIGu-USDJPY-What-goes-up-Must-come-down-Massive-Trading-Lesson/" target="_blank"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="complains">
+                        <div class="complains-1">
+                            <div class="have">HAVE COMPLAINTS? <span>WRITE TO US</span> </div>
+                            <div class="lines"></div>
+                        </div>
+                        <div class="forms">
+                            <form>
+                                <div class="input">
+                                    <input type="text" placeholder="Your Name*" class="inputss" required>
+                                    <input type="email" placeholder="Email Address*" required>
+                                    <input type="text" placeholder="Phone Number*" class="inputss" required>
+                                    <input type="text" placeholder="Subject" required>
+                                </div>
+                                <textarea placeholder="Your Message Here..." required></textarea>
+                                <div class="send">
+                                    <div class="send-1">
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <span>Send Message</span>
+                                            <i class="fas fa-paper-plane"></i>
+                                        </a>
+                                    </div>
+                                   <div class="note">
+                                        <div class="note-1"> <span>Note:</span> We promise that we don't do spam & your mail address is confidential.</div >
+                                   </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <div class="footers">
+                            <div class="today">
+                                <div class="today-1">
+                                    <div class="logo-1">
+                                        <a href="index.html">
+                                            <div class="logo">
+                                                <img src="imgs/yellow-logo.png" alt="">
+                                            </div>
+                                            <div class="crypto">
+                                                <div class="crypto-1">CRYPTOFXMGMT <span>invest Today for tomorrow.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <p>Invest in an industry leading, and reliable company. We provide you with necessary features that will make your experience better. Not only do we guarantee the fastest and the captivating returns on your investments, but we also guarantee the security of your Investments.</p>
+                                    <div class="email">
+                                        <input type="email" placeholder="Email Address" required>
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <div class="message">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </div>
+                                        </a>
+                                       
+                                    </div>
+                                </div>
+                                <div class="quick">
+                                    <div class="quick-1">
+                                        <div class="line">QUICK LINKS</div>
+                                        <div class="lines"></div>
+                                    </div>
+                                    <div class="home">
+                                        <ul>
+                                            <li class="firstsss">
+                                                <a href="index.html">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>Home Page</span>
+                                                </a>
+                                            </li>
+                                            <li class="firstss">
+                                                <a href="#members">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>Our Members</span>
+                                                </a>
+                                            </li>
+                                            <li class="firsts">
+                                                <a href="#feedback">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>Client Feedback</span>
+                                                </a>
+                                            </li>
+                                            <li class="first">
+                                                <a href="regiter.html">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>Register</span>
+                                                </a>
+                                            </li>
+                                            <li class="firs">
+                                                <a href="login.html">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>log in</span>
+                                                </a>
+                                            </li>
+                                            <li class="fir">
+                                                <a href="#price">
+                                                    <i class="fas fa-circle-chevron-right"></i>
+                                                    <span>Investments Plans</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="stay">
+                                    <div class="stay-1">
+                                        <div class="with">STAY WITH US</div>
+                                        <div class="dash"></div>
+                                    </div>
+                                    <div class="company">
+                                        <div class="company-1">
+                                            <i class="fas fa-location-dot"></i>
+                                            <div class="company-2">
+                                                <div class="name">Company Name:</div>
+                                                <p>CryptoFXMgmt LTD.</p>
+                                            </div>
+                                        </div>
+                                        <div class="company-1">
+                                            <i class="fas fa-mobile-retro"></i>
+                                            <div class="company-2">
+                                                <div class="name">Phone Number:</div>
+                                                <p>425-456-0975</p>
+                                            </div>
+                                        </div>
+                                        <div class="company-1">
+                                            <i class="fas fa-envelope"></i>
+                                            <div class="company-2">
+                                                <div class="name">Email Address</div>
+                                                <p><a href="mailto:cryptofxmgmt.gmail.com">cryptofxmgmt.gmail.com</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="socials">
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                        <a href="mailto:cryptofxmgmt.gmail.com">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="background">
+                            <div class="background-1">
+                                <div class="profile">
+                                    <a href="#about">Company Profile</a>
+                                    <a href="#">Terms and conditions</a>
+                                    <a href="#">refund policy</a>
+                                </div>
+                                <p>Copyright 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

@@ -10,6 +10,15 @@ const logger = require("morgan");
 const connectDB = require("./config/database");
 const mainRoutes = require("./routes/main");
 const postRoutes = require("./routes/posts");
+const dashboardRoutes = require('./routes/dashboardRoutes');
+const depositRoutes = require('./routes/depositRoutes');
+const withdrawRoutes = require('./routes/withdrawRoutes');
+const expertRoutes = require('./routes/expertRoutes');
+const walletRoutes = require('./routes/walletRoutes');
+const cryptoRoutes = require('./routes/cryptoRoutes');
+const plansRoutes = require('./routes/plansRoutes');
+const wallet2Routes = require('./routes/wallet2Routes');
+const safetylockRoutes = require('./routes/safetylockRoutes');
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
@@ -56,6 +65,15 @@ app.use(flash());
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);
 app.use("/post", postRoutes);
+app.use('/dashboard', dashboardRoutes);
+app.use('/deposit', depositRoutes);
+app.use('/withdraw', withdrawRoutes);
+app.use('/experts', expertRoutes);
+app.use('/wallet', walletRoutes);
+app.use('/buycrpto', cryptoRoutes);
+app.use('/plans', plansRoutes);
+app.use('/wallet2', wallet2Routes);
+app.use('/safetylock', safetylockRoutes);
 
 
 //Server Running

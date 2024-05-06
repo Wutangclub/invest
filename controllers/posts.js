@@ -1,6 +1,7 @@
 const cloudinary = require("../middleware/cloudinary");
 const Post = require("../models/Post");
 
+
 module.exports = {
   getProfile: async (req, res) => { 
     console.log(req.user)
@@ -15,6 +16,9 @@ module.exports = {
       console.log(err);
     }
   },
+
+
+
   getPost: async (req, res) => {
     try {
       //id parameter comes from the post routes
