@@ -160,8 +160,8 @@ body {
 .sectionss .started .get-started .getstar form .user  .showBtn,
 .sectionss .started .get-started .getstar form .user  i {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20%;
+    transform: translateY(-10%);
     color: #ffffff;
     font-size: 14px;
     cursor: default;
@@ -238,8 +238,8 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    cursor: no-drop;
-    opacity: 0.5;
+    cursor: pointer;
+   
     transition: all 0.3s ease;
 }
 

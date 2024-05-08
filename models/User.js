@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
   userName: { type: String, unique: true },
-  fname:{ type: String, unique: true},
   email: { type: String, unique: true },
   Deposits: { type: Number, default:0 },
   withdrawn: { type:Number, default:0 },

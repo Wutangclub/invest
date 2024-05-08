@@ -21,22 +21,22 @@
                 <div class="coint">
                     <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label >
                     <div class="crypto">
-                        <a href="/">
+                        <a href="#">
                             <div class="images">
                                 <img src="imgs/yellow-logo.png" alt="">
                             </div>   
-                            <div class="crypto-1">FINCREST<span>FX</span>MGMT</div> 
+                            <div class="crypto-1">FINCREST<span></span></div> 
                         </a>
                     </div>
                     <div class="coint1">
                         <div class="user">USER DASHBOARD</div>
                     </div>
                 </div>
-                <div  class="coint-1">
+                <div class="coint-1">
                     <div class="log">
-                        <div class="log-1">Logout</div>
+                        <div class="log-1"><a href="/logout" class="log-1 col-3 btn btn-primary">Logout</a></div>
                         <span class="material-symbols-outlined">
-                            <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+                            logout
                         </span>
                     </div>
                 </div>
@@ -50,10 +50,10 @@
             <div class="profile">
                 <div class="user">
                     <div class="user-1">
-                        <a href="profile.html"><img src="imgs/profile-img.png" alt=""></a>
+                        <a href="/profile"><img src="imgs/profile-img.png" alt=""></a>
                     </div>
                     <div class="user-2">
-                        <a href="profile.html"></a>
+                        <a href="/profile"><%= user.userName %></a>
                         <div class="valid">Current Investment:<span><%= user.Deposits %></span> </div>
                     </div>
                 </div>
@@ -61,15 +61,15 @@
                     <div class="main">Main</div>
                     <div class="deposit">
                         <div class="deposit-1">
-                            <a href="/dashboard" class="show show-1">
-                                <i id="sort" class="fas fa-house house-1"></i>
-                                <div class="withdraw name">Dashboard</div>
+                            <a href="/dashboard" class="show ">
+                                <i id="sort" class="fas fa-house "></i>
+                                <div class="withdraw ">Dashboard</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/deposit" class="show">
-                                <i id="sort" class="fa-solid fa-table-cells"></i>
-                                <div class="withdraw">Deposit</div>
+                            <a href="/deposit" class="show show-1">
+                                <i id="sort" class="fa-solid fa-table-cells house-1"></i>
+                                <div class="withdraw name">Deposit</div>
                             </a>
                         </div>
                         <div class="deposit-1">
@@ -85,7 +85,7 @@
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="invsetment.html" class="show">
+                            <a href="/investment" class="show">
                                 <i id="sort" class="fas fa-table-list"></i>
                                 <div class="withdraw">Investment</div>
                             </a>
@@ -138,14 +138,14 @@
                         <i class="fa-solid fa-file-invoice-dollar"></i>
                         <div class="deposit">DEPOSITS</div>
                     </div>
-                    <div class="dolla one"><%= user.Deposits %></div>
+                    <div class="dolla one">$<%= user.Deposits %></div>
                 </div>
                 <div class="earned-1">
                     <div class="logo">
                         <i class="fa-solid fa-circle-dollar-to-slot"></i>
                         <div class="deposit">PROFITS</div>
                     </div>
-                    <div class="dolla two"><%= user.profits %></div>
+                    <div class="dolla two">$<%= user.profits %></div>
                 </div>
                 
                 <div class="earned-1">
@@ -153,7 +153,7 @@
                         <i class="fa-solid fa-wallet"></i>
                         <div class="deposit">WITHDRAWN</div>
                     </div>
-                    <div class="dolla four"><%= user.withdrawn %></div>
+                    <div class="dolla four">$<%= user.withdrawn %></div>
                 </div>
             </div>
             
@@ -389,6 +389,6 @@
 
 
     <script src="/scripts/chart.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/main-dash.js"></script>
 </body>
 </html>

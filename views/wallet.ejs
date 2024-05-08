@@ -53,7 +53,7 @@
                         <a href="/profile"><img src="imgs/profile-img.png" alt=""></a>
                     </div>
                     <div class="user-2">
-                        <a href="/profile"></a>
+                        <a href="/profile"><%= user.userName %></a>
                         <div class="valid">Current Investment:<span><%= user.Deposits %></span> </div>
                     </div>
                 </div>
@@ -61,15 +61,15 @@
                     <div class="main">Main</div>
                     <div class="deposit">
                         <div class="deposit-1">
-                            <a href="/dashboard" class="show show-1">
-                                <i id="sort" class="fas fa-house house-1"></i>
-                                <div class="withdraw name">Dashboard</div>
+                            <a href="/dashboard" class="show ">
+                                <i id="sort" class="fas fa-house "></i>
+                                <div class="withdraw ">Dashboard</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/deposit" class="show">
-                                <i id="sort" class="fa-solid fa-table-cells"></i>
-                                <div class="withdraw">Deposit</div>
+                            <a href="/deposit" class="show show-1">
+                                <i id="sort" class="fa-solid fa-table-cells house-1"></i>
+                                <div class="withdraw name">Deposit</div>
                             </a>
                         </div>
                         <div class="deposit-1">
@@ -85,7 +85,7 @@
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/invsetment" class="show">
+                            <a href="/investment" class="show">
                                 <i id="sort" class="fas fa-table-list"></i>
                                 <div class="withdraw">Investment</div>
                             </a>
@@ -323,7 +323,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <p>2022 © CryptoFXMgmt.</p>
+            <p>2024 © FINCREST.</p>
         </div>
     </footer>
     <script src="/scripts/main-dash.js"></script>

@@ -24,9 +24,9 @@
                     <div class="crypto">
                         <a href="#">
                             <div class="images">
-                                <img src="img/yellow-logo.png" alt="">
+                                <img src="imgs/yellow-logo.png" alt="">
                             </div>   
-                            <div class="crypto-1">CRYPTO<span>FX</span>MGMT</div> 
+                            <div class="crypto-1">CRYPTO<span></span></div> 
                         </a>
                     </div>
                     <div class="coint1">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="coint-1">
                     <div class="log">
-                        <div class="log-1">Logout</div>
+                        <div  class="log-1">Logout</div>
                         <span class="material-symbols-outlined">
                             logout
                         </span>
@@ -54,7 +54,7 @@
                         <a href="/profile"><img src="imgs/profile-img.png" alt=""></a>
                     </div>
                     <div class="user-2">
-                        <a href="/profile"><%= user.fname %></a>
+                        <a href="/profile"><%= user.userName %></a>
                         <div class="valid">Current Investment:<span><%= user.Deposits %></span> </div>
                     </div>
                 </div>
@@ -62,40 +62,40 @@
                     <div class="main">Main</div>
                     <div class="deposit">
                         <div class="deposit-1">
-                            <a href="index.html" class="show ">
+                            <a href="/dashboard" class="show ">
                                 <i id="sort" class="fas fa-house "></i>
                                 <div class="withdraw ">Dashboard</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="deposit.html" class="show">
-                                <i id="sort" class="fa-solid fa-table-cells"></i>
-                                <div class="withdraw ">Deposit</div>
+                            <a href="/deposit" class="show show-1">
+                                <i id="sort" class="fa-solid fa-table-cells house-1"></i>
+                                <div class="withdraw name">Deposit</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="withdraw.html" class="show">
+                            <a href="/withdraw" class="show">
                                 <i id="sort" class="fa-solid fa-book"></i>
                                 <div class="withdraw">withdraw</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="Experts_traders.html" class="show">
+                            <a href="/experts" class="show">
                                 <i  id="sort" class="fa-solid fa-user"></i>
                                 <div class="withdraw">Follow Experts Traders</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="invsetment.html" class="show">
+                            <a href="/investment" class="show">
                                 <i id="sort" class="fas fa-table-list"></i>
                                 <div class="withdraw">Investment</div>
                             </a>
                         </div>
                         <div class="deposit-1" id="wrapper">
-                            <div class="show  show-1">
-                                <i id="sort" class="fa-solid fa-wallet  house-1"></i>
+                            <div class="show">
+                                <i id="sort" class="fa-solid fa-wallet"></i>
                                 <div class="supp">
-                                    <div class="withdraw name">Investment plans</div>
+                                    <div class="withdraw">Investment plans</div>
                                     <i class="uil uil-angle-down down"></i>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/bitcoin.svg" alt="">
+                                    <img src="imgs/bitcoin.svg" alt="">
                                 </div>
                                 <div class="euro small">bitcoin</div>
                             </a>
@@ -148,7 +148,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/decentral.svg" alt="">
+                                    <img src="imgs/decentral.svg" alt="">
                                 </div>
                                 <div class="euro">Manausdt</div>
                             </a>
@@ -157,7 +157,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/etherium.svg" alt="">
+                                    <img src="imgs/etherium.svg" alt="">
                                 </div>
                                 <div class="euro small">ethereum</div>
                             </a>
@@ -166,7 +166,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/luna.svg" alt="">
+                                    <img src="imgs/luna.svg" alt="">
                                 </div>
                                 <div class="euro">lunausdt</div>
                             </a>
@@ -175,7 +175,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/matic.svg" alt="">
+                                    <img src="imgs/matic.svg" alt="">
                                 </div>
                                 <div class="euro">Maticusdt</div>
                             </a>
@@ -185,7 +185,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/sol.svg" alt="">
+                                    <img src="imgs/sol.svg" alt="">
                                 </div>
                                 <div class="euro">Solusdt</div>
                             </a>
@@ -193,7 +193,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/bitcoin.svg" alt="">
+                                    <img src="imgs/bitcoin.svg" alt="">
                                 </div>
                                 <div class="euro small">bitcoin</div>
                             </a>
@@ -202,7 +202,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/decentral.svg" alt="">
+                                    <img src="imgs/decentral.svg" alt="">
                                 </div>
                                 <div class="euro">Manausdt</div>
                             </a>
@@ -211,7 +211,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/etherium.svg" alt="">
+                                    <img src="imgs/etherium.svg" alt="">
                                 </div>
                                 <div class="euro small">ethereum</div>
                             </a>
@@ -220,7 +220,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/luna.svg" alt="">
+                                    <img src="imgs/luna.svg" alt="">
                                 </div>
                                 <div class="euro">lunausdt</div>
                             </a>
@@ -229,7 +229,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/matic.svg" alt="">
+                                    <img src="imgs/matic.svg" alt="">
                                 </div>
                                 <div class="euro">Maticusdt</div>
                             </a>
@@ -239,7 +239,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/sol.svg" alt="">
+                                    <img src="imgs/sol.svg" alt="">
                                 </div>
                                 <div class="euro">Solusdt</div>
                             </a>
@@ -247,7 +247,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/BTCUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/bitcoin.svg" alt="">
+                                    <img src="imgs/bitcoin.svg" alt="">
                                 </div>
                                 <div class="euro small">bitcoin</div>
                             </a>
@@ -256,7 +256,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MANAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/decentral.svg" alt="">
+                                    <img src="imgs/decentral.svg" alt="">
                                 </div>
                                 <div class="euro">Manausdt</div>
                             </a>
@@ -265,7 +265,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/ETHUSD/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/etherium.svg" alt="">
+                                    <img src="imgs/etherium.svg" alt="">
                                 </div>
                                 <div class="euro small">ethereum</div>
                             </a>
@@ -274,7 +274,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/LUNAUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/luna.svg" alt="">
+                                    <img src="imgs/luna.svg" alt="">
                                 </div>
                                 <div class="euro">lunausdt</div>
                             </a>
@@ -283,7 +283,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/MATICUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/matic.svg" alt="">
+                                    <img src="imgs/matic.svg" alt="">
                                 </div>
                                 <div class="euro">Maticusdt</div>
                             </a>
@@ -293,7 +293,7 @@
                         <div class="bitcoins-1">
                             <a href="https://www.tradingview.com/symbols/SOLUSDT/?utm_campaign=ticker-tape&utm_medium=widget&utm_source=cryptofxmgmt.com" target="_blank">
                                 <div class="diagram">
-                                    <img src="/logo/sol.svg" alt="">
+                                    <img src="imgs/sol.svg" alt="">
                                 </div>
                                 <div class="euro">Solusdt</div>
                             </a>
@@ -517,10 +517,10 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <p>2022 © CryptoFXMgmt.</p>
+            <p>2024 © CryptoFXMgmt.</p>
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main-dash.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@
                             <div class="images">
                                 <img src="imgs/yellow-logo.png" alt="">
                             </div>   
-                            <div class="crypto-1">FINCREST<span>FX</span>MGMT</div> 
+                            <div class="crypto-1">FINCREST<span></span></div> 
                         </a>
                     </div>
                     <div class="coint1">
@@ -34,7 +34,7 @@
                 </div>
                 <div  class="coint-1">
                     <div class="log">
-                        <div class="log-1">Logout</div>
+                        <div href="/logout" class="log-1">Logout</div>
                         <span class="material-symbols-outlined">
                             <a href="/logout" class="col-3 btn btn-primary">Logout</a>
                         </span>
@@ -53,7 +53,7 @@
                         <a href="/profile"><img src="imgs/profile-img.png" alt=""></a>
                     </div>
                     <div class="user-2">
-                        <a href="/profile"><%= user.fname %></a>
+                        <a href="/profile"><%= user.userName %></a>
                         <div class="valid">Current Investment:<span><%= user.Deposits %></span> </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/invsetment" class="show">
+                            <a href="/investment" class="show">
                                 <i id="sort" class="fas fa-table-list"></i>
                                 <div class="withdraw">Investment</div>
                             </a>
@@ -344,7 +344,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <p>2022 © FINCREST.</p>
+            <p>2024 © FINCREST.</p>
         </div>
     </footer>
     <div class="shadow"></div>

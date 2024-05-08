@@ -52,7 +52,7 @@
                         <a href="/profile"><img src="imgs/profile-img.png" alt=""></a>
                     </div>
                     <div class="user-2">
-                        <a href="/profile"></a>
+                        <a href="/profile"><%= user.userName %></a>
                         <div class="valid">Current Investment:<span><%= user.Deposits %></span> </div>
                     </div>
                 </div>
@@ -60,15 +60,15 @@
                     <div class="main">Main</div>
                     <div class="deposit">
                         <div class="deposit-1">
-                            <a href="/dashboard" class="show">
+                            <a href="/dashboard" class="show ">
                                 <i id="sort" class="fas fa-house "></i>
                                 <div class="withdraw ">Dashboard</div>
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/deposit" class="show">
-                                <i id="sort" class="fa-solid fa-table-cells"></i>
-                                <div class="withdraw">Deposit</div>
+                            <a href="/deposit" class="show show-1">
+                                <i id="sort" class="fa-solid fa-table-cells house-1"></i>
+                                <div class="withdraw name">Deposit</div>
                             </a>
                         </div>
                         <div class="deposit-1">
@@ -78,9 +78,9 @@
                             </a>
                         </div>
                         <div class="deposit-1">
-                            <a href="/experts" class="show  show-1">
-                                <i  id="sort" class="fa-solid fa-user house-1"></i>
-                                <div class="withdraw name">Follow Experts Traders</div>
+                            <a href="/experts" class="show">
+                                <i  id="sort" class="fa-solid fa-user"></i>
+                                <div class="withdraw">Follow Experts Traders</div>
                             </a>
                         </div>
                         <div class="deposit-1">
@@ -640,12 +640,12 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer">
-            <p>2022 © FINCREST.</p>
+            <p>2024 © FINCREST.</p>
         </div>
     </footer>
 
 
 
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/main-dash.js"></script>
 </body>
 </html>

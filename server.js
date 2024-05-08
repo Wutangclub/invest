@@ -78,7 +78,7 @@ app.use('/plans', plansRoutes);
 app.use('/wallet2', wallet2Routes);
 app.use('/safetylock', safetylockRoutes);
 app.use('/contact', contactRoutes);
-app.use('/investmentk', investmentRoutes);
+app.use('/investment', investmentRoutes);
 
 
 //Server Running
