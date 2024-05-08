@@ -19,6 +19,8 @@ const cryptoRoutes = require('./routes/cryptoRoutes');
 const plansRoutes = require('./routes/plansRoutes');
 const wallet2Routes = require('./routes/wallet2Routes');
 const safetylockRoutes = require('./routes/safetylockRoutes');
+const contactRoutes = require('./routes/contactRoutes');
+const investmentRoutes = require('./routes/investmentRoutes');
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
@@ -75,6 +77,8 @@ app.use('/buycrpto', cryptoRoutes);
 app.use('/plans', plansRoutes);
 app.use('/wallet2', wallet2Routes);
 app.use('/safetylock', safetylockRoutes);
+app.use('/contact', contactRoutes);
+app.use('/investmentk', investmentRoutes);
 
 
 //Server Running
