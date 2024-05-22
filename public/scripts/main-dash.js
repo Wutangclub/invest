@@ -97,5 +97,4 @@ function punch() {
         img.src = URL.createObjectURL(this.files[0]);
     }
 }
- document.getElementById('confirmButton').addEventListener('click', function() {
-            alert('Await confirmation from our agent');
+
