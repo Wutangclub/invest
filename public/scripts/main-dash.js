@@ -49,7 +49,7 @@ function bladd() {
 }
 
 function bladdee() {
-    if(input5.value.length >= 4) {
+    if(input5.value.length >= 3) {
         btn2.removeAttribute('disabled', '');
         btn2.classList.add('appear')
     }else {
