@@ -73,7 +73,7 @@ app.use('/deposit', depositRoutes);
 app.use('/withdraw', withdrawRoutes);
 app.use('/experts', expertRoutes);
 app.use('/wallet', walletRoutes);
-app.use('/buycrpto', cryptoRoutes);
+app.use('/buycrypto', cryptoRoutes);
 app.use('/plans', plansRoutes);
 app.use('/wallet2', wallet2Routes);
 app.use('/safetylock', safetylockRoutes);
