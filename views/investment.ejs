@@ -303,17 +303,12 @@
             <!-- DEPOSIT -->
             <div class="deposit">
                 <div class="deposit-1">
-                    <div class="invest"><% if (user.deposit === 0 ) { %>
-  
-                        No investment
-                        
-                        
-                        <% } else if (user.deposit > 1 ) { %>
-                          <% user.deposit %>
+                    <div class="invest">
+                        <%= user.Deposits %>
                           
-                        <% } %></div>
+                        </div>
                     <div class="button">
-                        <a href="/deposit"><button class="buttonss">Start new Investment</button></a>
+                        <a href="/deposit"><button class="buttonss"><%= user.Deposits %>Start new Investment</button></a>
                     </div>
                 </div>
             </div>
